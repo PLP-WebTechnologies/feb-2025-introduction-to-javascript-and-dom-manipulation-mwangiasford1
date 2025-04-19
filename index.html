@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Info</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <div class="logo">
+        <img src="./images/istockphoto-1413514720-1024x1024.jpg" alt="Company Logo" />
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="information">
+        <div class="overlay"></div>
+      <img src="https://1.bp.blogspot.com/-t1HBQ6nxgAU/VO3icYP_nXI/AAAAAAAATzU/NOaoFKrNEgg/s1600/javascript-logo-png.png" class="javascript" alt="JavaScript Background Image" />
+      <div id="circle">
+        <div class="features one">
+          <h1>JavaScript</h1>
+          <h2>A high-level, just-in-time compiled, multi-paradigm programming language.</h2>
+          <img src="./images/technology-1283624_1280.jpg" alt="JavaScript Concept Art" />
+        </div>
+        <div class="features two">
+          <h1>ECMAScript</h1>
+          <h2>JavaScript conforms to the ECMAScript specification.</h2>
+          <img src="./images/programming-1873854_1280.webp" alt="Programming Illustration" />
+        </div>
+        <div class="features three">
+          <h1>Versatility</h1>
+          <h2>Used in web development, server-side apps, game development, and more.</h2>
+          <img src="./images/istockphoto-1156837650-1024x1024.jpg" alt="Code on Screen" />
+        </div>
+        <div class="features four">
+          <h1>Everywhere</h1>
+          <h2>JavaScript runs in browsers, servers (Node.js), and even IoT devices.</h2>
+          <img src="./images/istockphoto-1413514720-1024x1024.jpg" alt="JavaScript Background Image">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="upbtn">↑</button>
+      <h3>FEATURES</h3>
+      <button id="downbtn">↓</button>
+    </div>
+  </div>
+    <div>
+        <h3>JavaScript Info</h3>
+        <p>- Dynamic Behavior – JavaScript enables real-time updates, animations, and user interactions.
+            - Multi-Paradigm – Supports functional, object-oriented, and event-driven programming.
+            - Client-Side Execution – Runs directly in web browsers, making pages more interactive.
+            - First-Class Functions – Functions can be assigned to variables, passed as arguments, and returned from other functions.
+            - Prototype-Based Object Orientation – Uses prototypes instead of traditional classes for inheritance.
+            
+            Common Uses
+            - Web Development – Manipulating the DOM (Document Object Model) to update page content dynamically.
+            - Server-Side Development – With Node.js, JavaScript can handle backend logic.
+            - Game Development – Used in browser-based games.
+            - Mobile App Development – Frameworks like React Native allow JavaScript to build mobile apps.
+            
+            Resources to Learn More
+            - W3Schools JavaScript Tutorial – Beginner-friendly guide.
+            - MDN Web Docs – Comprehensive documentation.
+            - Wikipedia Overview – History and technical details.
+            
+            
+            </p>
+    </div>
+
+  <!-- JavaScript -->
+  <script>
+    let circle = document.getElementById("circle");
+    let upbtn = document.getElementById("upbtn");
+    let downbtn = document.getElementById("downbtn");
+
+    let rotateValue = 0;
+
+    upbtn.onclick = function () {
+      rotateValue -= 90;
+      circle.style.transform = `rotate(${rotateValue}deg)`;
+    };
+
+    downbtn.onclick = function () {
+      rotateValue += 90;
+      circle.style.transform = `rotate(${rotateValue}deg)`;
+    };
+  </script>
+</body>
+</html>
